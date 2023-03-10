@@ -204,3 +204,193 @@
 .footerlnner{
     text-align: center;
 }
+/*------------------------------
+ fadeAnimation デモ用装飾
+------------------------------*/
+.tuyomi{
+  text-align: center;
+}
+.fadeAnimation {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 96%;
+  margin: 60vh auto;
+}
+
+.fadeAnimation__item  {
+  width: 85%;
+  height: 50vh;
+  background-color: rgba(255, 255, 0, 0.479);
+  margin: 0 auto 60vh;
+}
+
+.fadeAnimation__itemInner  {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.fadeAnimation__text {
+  display: block;
+  writing-mode: horizontal-tb;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.fadeAnimation__text1 {
+  display: block;
+  writing-mode: horizontal-tb;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+}
+/*------------------------------
+ アニメーション
+------------------------------*/
+.fadeIn {
+  opacity: 0;
+}
+
+.fadeUp {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.fadeDown {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+
+
+
+.delay01s {
+  animation-delay: 0.1s;
+}
+
+.delay02s {
+  animation-delay: 0.2s;
+}
+
+.delay03s {
+  animation-delay: 0.3s;
+}
+
+.delay04s {
+  animation-delay: 0.4s;
+}
+
+.delay05s {
+  animation-delay: 0.5s;
+}
+
+.delay06s {
+  animation-delay: 0.6s;
+}
+
+.delay07s {
+  animation-delay: 0.7s;
+}
+
+.delay08s {
+  animation-delay: 0.8s;
+}
+
+.delay09s {
+  animation-delay: 0.9s;
+}
+
+.delay1s {
+  animation-delay: 1s;
+}
+
+.delay2s {
+  animation-delay: 2s;
+}
+
+.fadeIn.is-animated {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeUp.is-animated {
+  animation-name: fadeUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeDown.is-animated {
+  animation-name: fadeDown;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeRight.is-animated {
+  animation-name: fadeRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeLeft.is-animated {
+  animation-name: fadeLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
